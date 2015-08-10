@@ -88,7 +88,7 @@
 	<script>
 		$(document).ready(function(){
 			$('#btnMoreDetail').on('click',function(){
-				window.scrollTo(0,document.body.scrollHeight);
+				$("html, body").animate({ scrollTop: $(document).height() }, 1000);
 			});
 		});
 	</script>
